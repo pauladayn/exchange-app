@@ -1,0 +1,149 @@
+.wrapper {
+  background-image: url("../../assets//images/image\ 1.png");
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 3.35rem 2rem;
+  color: var(--white);
+}
+
+.form-container {
+  font-family: "Quicksand", sans-serif;
+  align-self: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 12px rgba(140, 152, 164, 0.08);
+  border: 1px solid rgba(231, 234, 243, 0.7);
+
+  width: min(80%, 358px);
+  font-size: 0.875rem;
+  padding: 1.375rem 1rem;
+  margin: 0 1rem 1.75rem;
+  color: var(--darkGray);
+  background-color: var(--white);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__label,
+.form__input {
+  font-weight: 400;
+}
+.form__input,
+.form__select,
+.form__select-option {
+  font-family: "Quicksand";
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  background-color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 1.5em;
+  padding: 0.6em 1em;
+  display: inline-block;
+}
+
+.form__label {
+  color: var(--mediumGray);
+  margin-bottom: 0.5em;
+}
+
+.form__input {
+  text-align: right;
+}
+
+.form__input--error {
+  font-family: "Quicksand";
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+
+  font-size: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1.5em;
+  padding: 0.6em 1em;
+  display: inline-block;
+  margin-bottom: 1.5em;
+  padding: 0.6em 1em;
+  display: inline-block;
+  text-align: right;
+  border: 1px solid rgb(203, 64, 64);
+}
+
+small {
+  color: rgb(203, 64, 64);
+  margin-top: 0;
+  text-align: right;
+}
+.form__button-submit {
+  border-style: none;
+  background-color: transparent;
+  text-align: left;
+  margin: 1em 0 2.5em 0;
+}
+
+.form__select-wrapper {
+  position: relative;
+}
+.form__select-arrow {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  background-color: red;
+  height: 100%;
+  width: 1rem;
+  pointer-events: none;
+}
+p {
+  font-weight: 600;
+}
+
+.date-info {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    background-image: url("../../assets/images/image_1_desktop.png");
+  }
+  h1 {
+    font-family: "Work Sans", sans-serif;
+  }
+  .form-container {
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+  }
+  .date-info {
+    display: inline-block;
+    color: var(--gray);
+    font-weight: 400;
+    size: 0.75rem;
+    margin-left: 2.5rem;
+  }
+  .form__action-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .test {
+    flex-direction: row;
+  }
+
+  .form {
+    position: relative;
+  }
+
+  .form__button-submit {
+    position: absolute;
+
+    left: 250px;
+    bottom: 80px;
+  }
+}

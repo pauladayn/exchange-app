@@ -1,0 +1,14 @@
+.alert-container {
+  padding: 0.5rem;
+  background-color: #fceac0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.alert-container__text {
+  color: var(--mediumGray);
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}

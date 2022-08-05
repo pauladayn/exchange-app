@@ -1,0 +1,27 @@
+.exchange-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.exchange-amount {
+  color: var(--gray);
+  margin: 0.5rem 0;
+}
+
+.exchange-amount,
+.exchange-amount-convert {
+  font-weight: 600;
+}
+
+.exchange-amount-convert {
+  color: var(--darkGray);
+  font-size: 1.25rem;
+  margin: 0.5em 0 1.125em 0;
+}
+
+@media (min-width: 768px) {
+  .exchange {
+    width: 40%;
+    margin-right: 80px;
+  }
+}
