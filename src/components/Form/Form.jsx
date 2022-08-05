@@ -3,7 +3,7 @@ import { ExchangeContext } from "../../context/exchangeContext";
 import "./form.css";
 import { ExchangeSVG } from "../../assets/icons/Exchange";
 import ExchangeInfo from "../ExchangeInfo/ExchangeInfo";
-import { checkInteger } from "../../helpers";
+import { checkInteger } from "../../helpers/";
 import Loader from "../Loader/Loader";
 
 const Form = () => {
